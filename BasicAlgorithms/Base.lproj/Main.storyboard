@@ -44,13 +44,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-1K-oXT">
+                                <rect key="frame" x="16" y="147" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1HV-cd-qsq"/>
+                                </constraints>
+                                <state key="normal" title="BubbleSort"/>
+                                <connections>
+                                    <action selector="bubbleSortDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LHa-ke-QNp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ph6-wA-Jri" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0BQ-MI-oyk"/>
+                            <constraint firstItem="3fE-1K-oXT" firstAttribute="top" secondItem="ph6-wA-Jri" secondAttribute="bottom" constant="37" id="Eoo-5j-te0"/>
                             <constraint firstItem="No4-ry-2eT" firstAttribute="leading" secondItem="3fv-lA-gJh" secondAttribute="trailing" constant="16" id="P9s-ph-Xsg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3fE-1K-oXT" secondAttribute="trailing" id="XVl-d1-wvP"/>
                             <constraint firstItem="ph6-wA-Jri" firstAttribute="top" secondItem="No4-ry-2eT" secondAttribute="bottom" constant="28" id="Zfg-zh-wxy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ph6-wA-Jri" secondAttribute="trailing" id="bui-2M-4kq"/>
+                            <constraint firstItem="3fE-1K-oXT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ffu-f6-O97"/>
                             <constraint firstItem="3fv-lA-gJh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="j3l-RC-Dfz"/>
                             <constraint firstItem="3fv-lA-gJh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qWY-Oz-vPw"/>
                             <constraint firstItem="No4-ry-2eT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xju-G3-cbd"/>

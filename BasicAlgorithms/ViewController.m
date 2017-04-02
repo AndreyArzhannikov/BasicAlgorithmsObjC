@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 
-
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -48,6 +47,23 @@
     }];
 }
 
+- (IBAction)bubbleSortDidPress:(UIButton *)sender {
+    NSMutableArray<Comparable> * array = [[NSMutableArray<Comparable> alloc] init];
+    for (int i = 0; i < 7; ++i) {
+        int randomIntValue = arc4random_uniform(20);
+        [array addObject: [NSNumber numberWithInt:randomIntValue]];
+    }
+    
+    [self printArray: array];
+    
+    [self performAsyncWithBlock:^{
+        [BasicAlgorithms bubbleSortWithArray:array];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [self printArray:array];
+        });
+    }];
+}
+
 
 - (void)performAsyncWithBlock: ( void (^)(void) )computationBlock {
     unsigned long flags = 0;
@@ -72,6 +88,14 @@
         [spinner stopAnimating];
         [spinner hidesWhenStopped];
     }
+}
+
+- (void)printArray:(NSArray*)array {
+    NSLog(@"-----");
+    for (int i = 0; i < [array count]; ++i) {
+        NSLog(@"%@", array[i]);
+    }
+    NSLog(@"-----");
 }
 
 @end

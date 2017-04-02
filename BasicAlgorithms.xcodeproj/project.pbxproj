@@ -14,6 +14,7 @@
 		88EEBA771E8FA8A900657F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EEBA761E8FA8A900657F63 /* Assets.xcassets */; };
 		88EEBA7A1E8FA8A900657F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EEBA781E8FA8A900657F63 /* LaunchScreen.storyboard */; };
 		88EEBA831E8FAF6F00657F63 /* BasicAlgorithms.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEBA821E8FAF6F00657F63 /* BasicAlgorithms.m */; };
+		88EEBA881E91685800657F63 /* NSNumber+ComparableCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEBA871E91685800657F63 /* NSNumber+ComparableCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		88EEBA7B1E8FA8A900657F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88EEBA811E8FA95B00657F63 /* BasicAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicAlgorithms.h; sourceTree = "<group>"; };
 		88EEBA821E8FAF6F00657F63 /* BasicAlgorithms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAlgorithms.m; sourceTree = "<group>"; };
+		88EEBA861E91683E00657F63 /* NSNumber+ComparableCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ComparableCategory.h"; sourceTree = "<group>"; };
+		88EEBA871E91685800657F63 /* NSNumber+ComparableCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ComparableCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				88EEBA6E1E8FA8A900657F63 /* AppDelegate.m */,
 				88EEBA701E8FA8A900657F63 /* ViewController.h */,
 				88EEBA711E8FA8A900657F63 /* ViewController.m */,
+				88EEBA861E91683E00657F63 /* NSNumber+ComparableCategory.h */,
+				88EEBA871E91685800657F63 /* NSNumber+ComparableCategory.m */,
 				88EEBA731E8FA8A900657F63 /* Main.storyboard */,
 				88EEBA761E8FA8A900657F63 /* Assets.xcassets */,
 				88EEBA781E8FA8A900657F63 /* LaunchScreen.storyboard */,
@@ -159,6 +164,7 @@
 				88EEBA721E8FA8A900657F63 /* ViewController.m in Sources */,
 				88EEBA6F1E8FA8A900657F63 /* AppDelegate.m in Sources */,
 				88EEBA6C1E8FA8A900657F63 /* main.m in Sources */,
+				88EEBA881E91685800657F63 /* NSNumber+ComparableCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

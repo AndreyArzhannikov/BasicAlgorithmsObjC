@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BasicAlgorithms.h"
+#import "NSNumber+ComparableCategory.h"
 
 @interface ViewController : UIViewController {
     UIActivityIndicatorView *spinner;
@@ -18,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fibonacciValueLabel;
 
 - (IBAction)calculateDidPress:(UIButton *)sender;
+- (IBAction)bubbleSortDidPress:(UIButton *)sender;
 
 @end
 

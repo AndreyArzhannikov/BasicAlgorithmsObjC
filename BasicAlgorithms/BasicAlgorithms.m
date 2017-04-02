@@ -38,4 +38,17 @@
     return fn;
 }
 
++ (void) bubbleSortWithArray: (NSMutableArray<Comparable> *)array {
+    for (long i = 0; i < [array count]; ++i) {
+        for (long j = 0; j < [array count] - i - 1; ++j) {
+            NSComparisonResult comparisonResult = [array[j] compare:array[j+1]];
+            if ( comparisonResult == NSOrderedDescending) {
+                id <Comparable> temp = array[j+1];
+                array[j+1] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+}
+
 @end

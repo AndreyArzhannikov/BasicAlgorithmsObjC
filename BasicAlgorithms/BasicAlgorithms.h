@@ -9,9 +9,17 @@
 #ifndef Fibonacci_h
 #define Fibonacci_h
 
+@protocol Comparable
+
+-(NSComparisonResult) compareTo: (id)object;
+
+@end
+
 @interface BasicAlgorithms : NSObject
 
 + (unsigned long long) fibonacciWithNumber: (long) number;
+
++ (void) bubbleSortWithArray: (NSArray<Comparable> *)array;
 
 @end
 
