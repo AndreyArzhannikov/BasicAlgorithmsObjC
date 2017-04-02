@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasicAlgorithms.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    UIActivityIndicatorView *spinner;
+}
 
+@property (weak, nonatomic) IBOutlet UITextField *fibonacciTextField;
+@property (weak, nonatomic) IBOutlet UIButton *calculateButton;
+@property (weak, nonatomic) IBOutlet UILabel *fibonacciValueLabel;
+
+- (IBAction)calculateDidPress:(UIButton *)sender;
 
 @end
 
