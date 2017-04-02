@@ -12,19 +12,25 @@
 
 @implementation BasicAlgorithms
 
-+ (int) fibonacciWithNumber: (int)number {
++ (unsigned long long) fibonacciWithNumber: (long)number {
     if (number < 0) {
         [NSException raise:@"Invalid argument"
-                    format:@"fibonacci number cannot be calculated for %d ", number];
+                    format:@"fibonacci number cannot be calculated for %ld", number];
     }
     
     if (number == 0 || number == 1) {
         return number;
     }
     
-    int fn1 = 1, fn2 = 0, fn = 0;
-    for (int i = 2; i < number + 1; ++i) {
+    unsigned long long fn1 = 1, fn2 = 0, fn = 0;
+    for (long i = 2; i < number + 1; ++i) {
+        if (fn1 > ULLONG_MAX - fn2) {
+            [NSException raise:@"Type overflow"
+                        format:@"fibonacci number too much for n = %ld", number];
+        }
+        
         fn = fn1 + fn2;
+        
         fn2 = fn1;
         fn1 = fn;
     }

@@ -25,7 +25,7 @@
         return;
     }
     
-    int number =  [text intValue];
+    long number =  [text longLongValue];
     
     [self showActivityIndicator];
     
@@ -41,10 +41,9 @@
         }
         @catch (NSException * e) {
             dispatch_sync(dispatch_get_main_queue(), ^{
-                self.fibonacciValueLabel.text = @"Input can not be negative!";
+                self.fibonacciValueLabel.text = [NSString stringWithFormat:@"%@", [e reason]];
                 [self hideActivityIndicatorIfNeeded];
             });
-            
         }
     }];
 }

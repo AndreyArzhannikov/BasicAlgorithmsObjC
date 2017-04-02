@@ -11,7 +11,7 @@
 
 @interface BasicAlgorithms : NSObject
 
-+ (int) fibonacciWithNumber: (int) number;
++ (unsigned long long) fibonacciWithNumber: (long) number;
 
 @end
 
